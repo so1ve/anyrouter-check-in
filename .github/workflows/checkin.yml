@@ -71,8 +71,8 @@ jobs:
 
     - name: 执行签到
       env:
-        ANYROUTER_ACCOUNTS: ${{ env.ANYROUTER_ACCOUNTS }}
-        PROVIDERS: ${{ env.PROVIDERS }}
+        ANYROUTER_ACCOUNTS: ${{ vars.ANYROUTER_ACCOUNTS }}
+        PROVIDERS: ${{ vars.PROVIDERS }}
         DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
         EMAIL_USER: ${{ secrets.EMAIL_USER }}
         EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
